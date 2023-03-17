@@ -2,15 +2,12 @@ import React from "react";
 import "../App.css";
 import { Button } from "./Button";
 import "./HomeSection.css";
-import ReactPlayer from "react-player";
+import vid from "../videos/video-1.mp4";
 
 function HomeSection() {
   return (
     <div className="home-container">
-      {/* <ReactPlayer controls url="src/videos/video-1.mp4" /> */}
-      {/* <video autoPlay loop muted>
-        <source src="src/videos/video-1.mp4" type="video/mp4" />
-      </video> */}
+      <video src={vid} autoPlay loop muted />
       <h1>ADVENTURE AWAITS</h1>
       <p>What are you waiting for?</p>
       <div className="home-btns">
